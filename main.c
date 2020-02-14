@@ -17,8 +17,8 @@ int main(int argc, char* argv[])
   //reading in input from command line
   float learning_rate = atof(argv[1]);
   int num_iterations = atoi(argv[2]);
-  printf("%f %d\n", learning_rate, num_iterations);
-  
+  printf("\nlearning_rate :: %f num_epochs :: %d\n\n", learning_rate, num_iterations);
+
   //initializing parameters
   srand(time(NULL));
   float w = rand() % 2;
@@ -32,7 +32,8 @@ int main(int argc, char* argv[])
   printf("Final Value Of b %f \n \n", b);
 
   //predicting values
-  printf("Predicted Value For 10 is %f \n", predict(10, w, b));
+  float x_predict = atof(argv[3]);
+  printf("Predicted Value For %f is %f \n", x_predict, predict(x_predict, w, b));
 
   //printing cost values over iterations
   /*int count;
@@ -40,5 +41,6 @@ int main(int argc, char* argv[])
   {
     printf("Cost %d %f \n", count, cost[count]);
   }*/
+  printf("Final Cost: %f\n", cost[num_iterations]);
   exit(EXIT_SUCCESS);
 }
