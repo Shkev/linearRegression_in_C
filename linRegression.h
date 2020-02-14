@@ -7,16 +7,16 @@
 /*Determines cost and adjusts
 *weights and bias
 */
-float batch_gradient_descent();
+float batch_gradient_descent(float*, float*, int, float, float*, float*);
 
 /*runs linear regression through iterations.
 *Determines weights and biases and cost in
 *each iteration.
 *Returns array with cost values.
 */
-float* regression();
+float* regression(float*, float*, int, float, int, float*, float*);
 
 /*predicts output given input values*/
-float predict();
+float predict(float, float, float);
 
 #endif
