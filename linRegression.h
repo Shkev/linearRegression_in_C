@@ -5,7 +5,8 @@
 
 
 /*Determines cost and adjusts
-*weights and bias
+*weights and bias.
+*The optimizer.
 */
 float batch_gradient_descent(float*, float*, int, float, float*, float*);
 

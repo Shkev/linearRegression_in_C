@@ -7,8 +7,8 @@
 int main(int argc, char* argv[])
 {
   //input data
-  float x[10] = {1,2,3,4,5,6,7,8,9,10};
-  float y[10] = {1,2,3,4,5,6,7,8,9,10};
+  float x[] = {1,2,3,4,5,6,7,8,9,10,11,12,13,14,15};
+  float y[] = {3,5,7,9,11,13,15,17,19,21,23,25,27,29,31};
 
   //hyperparams
   /*float learning_rate = 0.0001;

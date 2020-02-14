@@ -26,7 +26,6 @@ float* regression(float x[], float y[], int num_data, float learning_rate, int n
 {
   static float* cost;
   cost = malloc(sizeof(int) * num_iterations);
-  //cost = realloc(cost, num_data * sizeof(float));
   int count;
   for (count = 0; count < num_iterations; count++)
   {
