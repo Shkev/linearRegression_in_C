@@ -11,14 +11,14 @@ float batch_gradient_descent(float x[], float y[], int num_data, float learning_
   int count;
   for (count = 0; count < num_data; count++)
   {
-    cost += pow((((*w) * x[count] + *b) - y[count]), 2); //equation to find cost
-    db += (*w * x[count] + *b) - y[count];
-    dw += ((*w * x[count] + *b) - y[count]) * x[count];
+    cost += pow((((*w) * x[count] + *b) - y[count]), 2) / (2 * num_data); //equation to find cost
+    db += ((*w * x[count] + *b) - y[count]) / num_data;
+    dw += ((*w * x[count] + *b) - y[count]) * x[count] / num_data;
   }
 
   //updating weight and bias
-  *w = *w - (learning_rate * dw / num_data);
-  *b = *b - (learning_rate * db / num_data);
+  *w = *w - (learning_rate * dw);
+  *b = *b - (learning_rate * db);
   return cost;
 }
 
