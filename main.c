@@ -6,6 +6,11 @@
 
 int main(int argc, char* argv[])
 {
+  /*
+   *first input in command line is learning rate,
+   * second input is number of iterations
+   *thirst input is x value to predict an output for.
+   */
   //input data
   float x[] = {1,2,3,4,5,6,7,8,9,10,11,12,13,14,15};
   float y[] = {3,5,7,9,11,13,15,17,19,21,23,25,27,29,31};
@@ -41,6 +46,6 @@ int main(int argc, char* argv[])
   {
     printf("Cost %d %f \n", count, cost[count]);
   }*/
-  printf("Final Cost: %f\n", cost[num_iterations]);
+  printf("Final Cost: %f\n", cost[num_iterations-1]);
   exit(EXIT_SUCCESS);
 }
