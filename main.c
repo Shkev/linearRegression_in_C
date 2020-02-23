@@ -8,8 +8,8 @@ int main(int argc, char* argv[])
 {
   /*
    *first input in command line is learning rate,
-   * second input is number of iterations
-   *thirst input is x value to predict an output for.
+   *second input is number of iterations
+   *third input is x value to predict an output for.
    */
   //input data
   float x[] = {1,2,3,4,5,6,7,8,9,10,11,12,13,14,15};
